@@ -1,5 +1,82 @@
-DevChallenge
-Home Features Contact
-Create amazing graphics
-Colaborate and create beautiful graphics with your team
-Start now
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/index.css">
+  
+  <title>AmazingGraph by Victor Campos</title>
+</head>
+<body>
+  <header>
+    <div>
+      <a href="/">DevChallenge</a>
+    </div>
+    
+    <nav>
+      <svg 
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+        height="32px" viewBox="0 0 32 32" width="32px"
+        id="menuBtn" style="enable-background:new 0 0 32 32;" 
+        version="1.1"  xml:space="preserve"
+      >
+        <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/>
+      </svg>
+      <ul id="menuLinks">
+        <li><a href="">Home</a></li>
+        <li><a href="">Features</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a onclick="openLoginModal()">Log In</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div>
+      <img src="/assets/team.jpg" alt="background">
+    </div>
+    <div>
+      <h1>Create amazing graphics</h1>
+      <p>Colaborate and create beautiful graphics with your team</p>
+      <a href="">Start now</a>
+    </div>
+  </main>
+  
+  <footer>
+    <p>
+      Developed by <a href="#">Victor Campos</a>
+    </p>
+  </footer>
+
+  <div id="modal">
+    <div class="modal-content">
+      <div>
+        <h1>DevChallenge</h1>
+      </div>
+      <form id=login-form action="/" method="get">
+        <input type="email" name="email" id="login-email" placeholder="Email or Phone Number" />
+        <input type="password" name="password" id="login-password" placeholder="Password" />
+        <button type="submit">Log In</button>
+      </form>
+      <svg version="1.1" id="closeModalBtn" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          viewBox="0 0 455.111 455.111" style="enable-background:new 0 0 455.111 455.111;" xml:space="preserve">
+        <circle style="fill:#E24C4B;" cx="227.556" cy="227.556" r="227.556"/>
+        <path style="fill:#D1403F;" d="M455.111,227.556c0,125.156-102.4,227.556-227.556,227.556c-72.533,0-136.533-32.711-177.778-85.333
+          c38.4,31.289,88.178,49.778,142.222,49.778c125.156,0,227.556-102.4,227.556-227.556c0-54.044-18.489-103.822-49.778-142.222
+          C422.4,91.022,455.111,155.022,455.111,227.556z"/>
+        <path style="fill:#FFFFFF;" d="M331.378,331.378c-8.533,8.533-22.756,8.533-31.289,0l-72.533-72.533l-72.533,72.533
+          c-8.533,8.533-22.756,8.533-31.289,0c-8.533-8.533-8.533-22.756,0-31.289l72.533-72.533l-72.533-72.533
+          c-8.533-8.533-8.533-22.756,0-31.289c8.533-8.533,22.756-8.533,31.289,0l72.533,72.533l72.533-72.533
+          c8.533-8.533,22.756-8.533,31.289,0c8.533,8.533,8.533,22.756,0,31.289l-72.533,72.533l72.533,72.533
+          C339.911,308.622,339.911,322.844,331.378,331.378z"/>
+      </svg>
+    </div>
+
+  </div>
+
+  <script src="/index.js"></script>
+</body>
+</html>
